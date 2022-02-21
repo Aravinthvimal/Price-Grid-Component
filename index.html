@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="./images/favicon.png">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Karla:wght@200;300;400;500;600;700;800&display=swap');
+  </style>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            LightGray: 'hsl(204, 43%, 93%)',
+            Cyan: 'hsl(179, 62%, 43%)',
+            LightCyan: '#4ABEBD',
+            GrayishBlue: 'hsl(218, 22%, 67%)',
+            BrightYellow: 'hsl(71, 73%, 54%)',
+          }
+        }
+      }
+    }
+  </script>
+  <title> Single Price Grid Component </title>
+</head>
+<body style="font-family: 'Karla', sans-serif;" class="flex items-center justify-center bg-LightGray">
+  <main class="flex flex-col justify-center items-center my-20 lg:my-32 w-10/12 lg:w-7/12 rounded-xl shadow-xl">
+    <div class="flex flex-col gap-3 bg-white px-8 lg:px-20 py-6 lg:py-12 w-full rounded-t-xl lg:rounded-b-none lg:rounded-xl">
+      <h3 class="text-2xl lg:text-3xl font-bold text-Cyan"> Join our community </h3>
+      <p class="text-lg lg:text-2xl font-semibold text-BrightYellow"> 30-day, hassle-free money back guarantee </p>
+      <p class="text-sm lg:text-xl text-GrayishBlue"> Gain access to our full library of tutorials along with expert code reviews.
+        Perfect for any developers who are serious about honing their skills.
+      </p>
+    </div>
+    <div class="lg:flex flex-row justify-between w-full">
+      <div class="flex flex-col gap-2 bg-Cyan text-white lg:w-1/2 px-8 lg:px-20 py-6 pb-10 lg:rounded-bl-xl">
+        <h3 class="text-xl lg:text-2xl font-semibold "> Monthly Subscription </h3>
+        <div class="flex items-center gap-3 mt-2 lg:mt-4">
+          <h3 class="text-3xl lg:text-4xl font-semibold"> &dollar;29 </h3>
+          <p class="inline text-LightGray opacity-70 text-base lg:text-lg font-light"> per month </p>
+        </div>
+        <p> Full access for less than &dollar;1 a day </p>
+        <button class="mt-5 bg-BrightYellow py-3 text-lg font-semibold rounded-lg shadow-xl"> Sign Up </button>
+      </div>
+      <div class="flex flex-col gap-1 bg-LightCyan text-white lg:w-1/2 px-8 lg:px-16 py-6 lg:rounded-br-xl lg:rounded-bl-none rounded-b-xl">
+        <h3 class="text-2xl font-semibold "> Why Us </h3>
+        <ul class="text-sm lg:text-base mt-2 opacity-80">
+          <li> Tutorials by industry experts </li>
+          <li> Peer &amp; expert code review </li>
+          <li> Coding exercises </li>
+          <li> Access to our GitHub repos </li>
+          <li> Community forum </li>
+          <li> Flashcard decks </li>
+          <li> New videos every week </li> 
+        </ul>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
